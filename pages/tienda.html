@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/logoLaLucha.png" />
+    <title>La Lucha - Tienda</title>
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/tiendaStyles.css">
+    <!-- SCRIPTS -->
+    <script defer src="../js/tiendaScript.js"></script>
+    <script defer src="../js/carrito.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav class="header__nav">
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <a target="_blank" href="../index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="nosostros.html" class="nav__link">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <p class="header__text">La Lucha</p>
+            <div class="search__bar">
+                <img src="../assets/iconLupa.png" alt="lupa" class="icon__lupa">
+                <input type="search" class="bar">
+            </div>
+            <div class="store__price">
+                <img src="../assets/iconTIenda.png" alt="tienda" class="icon__store">
+                <p class="price header__text">S/<span class="price__value">0.00</span></p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section1 container">
+        <div class="section__publicidad">
+            <img src="../assets/leftArrow.png" alt="left arrow" class="left__arrow arrow">
+            <img src="../assets/publicidad0.png" alt="publicidad" class="publicidad">
+            <img src="../assets/rightArrow.png" alt="right arrow" class="right__arrow arrow">
+        </div>
+    </section>
+    
+    <section class="section2 container">
+        <nav class="section nav">
+            <ul class="nav__lista">
+                <li class="nav__item">
+                    <p class="nav__category category__selected">SÁNGUCHES</p>
+                </li>
+                <li class="nav__item">
+                    <p class="nav__category">JUGOS</p>
+                </li>
+                <li class="nav__item">
+                    <p class="nav__category">LUCHA CAFÉ</p>
+                </li>
+            </ul>
+        </nav>
+        <div class="grid__prod--items">
+            <div class="grid__products">
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">CHICHARRÓN</p>
+                        <p class="description">CON CAMOTE & SARSA CRIOLLA</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Un clásico peruano: chicharrón de cerdo crujiente con camote dorado y una sarsa criolla fresca.
+                        </p>
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add" data-product="CHICHARRÓN" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">POLLO A LA BRASA</p>
+                        <p class="description">CON AJÍ POLLERO, LECHUGA & TOMATE</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Jugoso pollo a la brasa con un toque de ají pollero, lechuga y tomate fresco en un pan suave.
+                        </p>
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add" data-product="POLLO A LA BRASA" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">HAMBURGUESA</p>
+                        <p class="description">DOBLE DISCO DE CARNE Y QUESO CHEDDAR</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Una hamburguesa abundante con doble carne y queso cheddar derretido.
+                        </p>
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add" data-product="HAMBURGUESA" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">PAVO A LA LEÑA</p>
+                        <p class="description">CON TÁRTARA DE LA CASA</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Pavo asado a la leña servido con nuestra especial tártara casera.
+                        </p>
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add" data-product="PAVO A LA LEÑA" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">LECHON A LA LEÑA</p>
+                        <p class="description">CON TÁRTARA DE LA CASA</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Lechón asado lentamente a la leña con nuestra deliciosa tártara casera.
+                        </p>
+                        <p class="prod__price">Precio: S/.25</p>
+                        <p class="prod__add" data-product="LECHON A LA LEÑA" data-price="25">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">HAWAIANA</p>
+                        <p class="description">HAMBURGUESA, QUESO CHEDDAR Y PIÑA</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Una hamburguesa tropical con queso cheddar y rodajas de piña jugosa.
+                        </p>
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add" data-product="HAWAIANA" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">POLLO DESHILACHADO</p>
+                        <p class="description">CON LECHUGA & TOMATE</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Pollo deshilachado con lechuga y tomate fresco en un pan suave.
+                        </p>
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add" data-product="POLLO DESHILACHADO" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">POLLO DELUXE</p>
+                        <p class="description">DESHILACHADO CON JAMÓN, QUESO Y HUEVO</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Pollo deshilachado con jamón, queso y huevo para una experiencia deliciosa.
+                        </p>
+                        <p class="prod__price">Precio: S/.14</p>
+                        <p class="prod__add" data-product="POLLO DELUXE" data-price="14">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">ASADO DE RES</p>
+                        <p class="description">AL JUGO Y CON TÁRTARA</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Jugoso asado de res servido con jugo natural y nuestra tártara especial.
+                        </p>
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add" data-product="ASADO DE RES" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">JAMÓN Y HUEVOS</p>
+                        <p class="description">REVUELTOS CON EXTRA QUESO</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Revuelto de huevos con jamón y extra de queso para un desayuno satisfactorio.
+                        </p>
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add" data-product="JAMÓN Y HUEVOS" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">MIXTO COMPLETO</p>
+                        <p class="description">CON PAN FRANCÉS, JAMÓN, QUESO Y HUEVO</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Un clásico mixto con pan francés relleno de jamón, queso y huevo.
+                        </p>
+                        <p class="prod__price">Precio: S/.18</p>
+                        <p class="prod__add" data-product="MIXTO COMPLETO" data-price="18">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles">
+                        <p class="name">EL PREFERIDO</p>
+                        <p class="description">JUGOSO ASADO DE RES & QUESO CHEDDAR</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__info">
+                            Nuestro plato favorito: jugoso asado de res con queso cheddar derretido.
+                        </p>
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add" data-product="EL PREFERIDO" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="grid__products grid__products--jugos grid__products--ocultar">
+                <p class="prod__category row-1">JUGOS - BÁSICOS</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PIÑA</p>
+                        <p class="description__jugos">Refrescante y ligeramente ácida, la piña es una elección clásica para satisfacer la sed.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category0" data-product="PIÑA" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">FRESA</p>
+                        <p class="description__jugos">Deliciosa y dulce, la fresa aporta un toque de frescura a tu bebida.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category0" data-product="FRESA" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MANGO</p>
+                        <p class="description__jugos">El mango ofrece un sabor tropical y jugoso que es perfecto para saciar la sed.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category0" data-product="MANGO" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PAPAYA</p>
+                        <p class="description__jugos">La papaya es una fruta suave y ligeramente dulce que agrega un toque exótico.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category0" data-product="PAPAYA" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">NARANJA</p>
+                        <p class="description__jugos">El clásico sabor cítrico y refrescante de la naranja es una opción favorita.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category0" data-product="NARANJA" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+
+                <p class="prod__category row-5">JUGOS - SURTIDOS</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">NARANJA PIÑA & FRESA</p>
+                        <p class="description__jugos">Una mezcla de sabores cítricos y dulces que despiertan tus papilas gustativas.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add category1" data-product="NARANJA PIÑA & FRESA" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PIÑA, FRESA PLÁTANO & PAPAYA</p>
+                        <p class="description__jugos">Una combinación tropical con un equilibrio de sabores y texturas.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.17</p>
+                        <p class="prod__add category1" data-product="PIÑA, FRESA PLÁTANO & PAPAYA" data-price="17">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PAPAYA, NARANJA & PLÁTANO</p>
+                        <p class="description__jugos">Un trío de frutas que aportan dulzura y vitalidad a tu bebida.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add category1" data-product="PAPAYA, NARANJA & PLÁTANO" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MARACUYÁ, MANGO & PLÁTANO</p>
+                        <p class="description__jugos">Una fusión de frutas tropicales con un toque exótico.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add category1" data-product="MARACUYÁ, MANGO & PLÁTANO" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+
+                <p class="prod__category row-8">JUGOS - CREMOSOS</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">FRESA CON LECHE</p>
+                        <p class="description__jugos">La cremosidad de la leche se combina con la dulzura de las fresas.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.15</p>
+                        <p class="prod__add category2" data-product="FRESA CON LECHE" data-price="15">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MANGO CON LECHE</p>
+                        <p class="description__jugos">El sabor tropical del mango se une a la suavidad de la leche.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.14</p>
+                        <p class="prod__add category2" data-product="MANGO CON LECHE" data-price="14">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PLÁTANO CON LECHE</p>
+                        <p class="description__jugos">La dulzura del plátano y la leche crean una combinación deliciosa.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.14</p>
+                        <p class="prod__add category2" data-product="PLÁTANO CON LECHE" data-price="14">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">LÚCUMA CON LECHE</p>
+                        <p class="description__jugos">La lúcuma, una fruta peruana, se mezcla con la leche para un sabor único.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.14</p>
+                        <p class="prod__add category2" data-product="LÚCUMA CON LECHE" data-price="14">Agregar al carrito</p>
+                    </div>
+                </div>
+
+                <p class="prod__category row-11">JUGOS - FROZEN</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PIÑA FROZEN</p>
+                        <p class="description__jugos">Una opción refrescante y congelada para los amantes de la piña.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category3" data-product="PIÑA FROZEN" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">FRESA FROZEN</p>
+                        <p class="description__jugos">El sabor fresco de la fresa en una bebida congelada.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.14</p>
+                        <p class="prod__add category3" data-product="FRESA FROZEN" data-price="14">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MANGO FROZEN</p>
+                        <p class="description__jugos">Disfruta de la jugosidad del mango en una versión helada.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category3" data-product="MANGO FROZEN" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MARACUYÁ FROZEN</p>
+                        <p class="description__jugos">La pasión del maracuyá se combina con el frío en esta bebida.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category3" data-product="MARACUYÁ FROZEN" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">NARANJADA FROZEN</p>
+                        <p class="description__jugos">Una versión congelada y refrescante de la clásica naranjada.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add category3" data-product="NARANJADA FROZEN" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+
+                <p class="prod__category row-15">JUGOS - EMOLIENTES</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">PIÑA EMOLIENTE</p>
+                        <p class="description__jugos">Un toque de piña en un emoliente que refresca y calma.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category4" data-product="PIÑA EMOLIENTE" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">MARACUYÁ EMOLIENTE</p>
+                        <p class="description__jugos">El maracuyá agrega un sabor exótico y refrescante a esta bebida.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category4" data-product="MARACUYÁ EMOLIENTE" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">HIERBABUENA EMOLIENTE</p>
+                        <p class="description__jugos">La hierbabuena aporta frescura y una sensación calmante.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category4" data-product="HIERBABUENA EMOLIENTE" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">NARANJA EMOLIENTE</p>
+                        <p class="description__jugos">Una opción cítrica y relajante para tu emoliente.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add category4" data-product="NARANJA EMOLIENTE" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__products grid__products--ocultar">
+                <p class="prod__category row-1">CAFÉ</p>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CAFÉ PASADO</p>
+                        <p class="description__jugos">Una taza de café pasado, robusto y aromático, para los amantes del café clásico.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add" data-product="CAFÉ PASADO" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CAFÉ CON LECHE</p>
+                        <p class="description__jugos">El equilibrio perfecto entre el café y la leche, proporcionando suavidad y sabor.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add" data-product="CAFÉ CON LECHE" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CAPUCCINO</p>
+                        <p class="description__jugos">Una bebida de café con espresso, leche vaporizada y una capa de espuma cremosa.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add" data-product="CAPUCCINO" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CHOCOLATE CALIENTE</p>
+                        <p class="description__jugos">Una deliciosa bebida a base de chocolate caliente, perfecta para calentarte.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.12</p>
+                        <p class="prod__add" data-product="CHOCOLATE CALIENTE" data-price="12">Agregar al carrito</p>
+                    </div>
+                </div>
+
+                <p class="prod__category row-5">REFRESCOS</p>
+                <div class="grid__prod--item grid__prod--refresco">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">GASEOSA</p>
+                        <p class="description__jugos">Refrescante y efervescente, la gaseosa es una opción popular para acompañar tus comidas.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add" data-product="GASEOSA" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item grid__prod--refresco">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CERVEZA</p>
+                        <p class="description__jugos">Disfruta de una cerveza fría y refrescante, perfecta para relajarte y socializar.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add" data-product="CERVEZA" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>
+                <div class="grid__prod--item grid__prod--refresco">
+                    <div class="item__tittles item__tittles--add">
+                        <p class="name__jugos">CHICHA DE LA LUCHA</p>
+                        <p class="description__jugos">Una bebida casera y auténtica que refleja la riqueza de los sabores regionales.</p>
+                    </div>
+                    <div class="info__prices">
+                        <p class="prod__price">Precio: S/.10</p>
+                        <p class="prod__add" data-product="CHICHA DE LA LUCHA" data-price="10">Agregar al carrito</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <div class="back__black">
+        <div class="shopping_cart">
+            <div class="cart__title">
+                <img src="../assets/iconCarrito.png" alt="carrito" class="car__img">
+                <p class="header__text">Carrito</p>
+                <img src="../assets/iconCerrar.png" alt="cerrar" class="close__img">
+            </div>
+            <div class="info__cart">
+                <div class="attributes__products">
+                    <p class="attribute__product">Categoría</p>
+                    <p class="attribute__product attribute__product--nombre">Nombre</p>
+                    <p class="attribute__product">Cantidad</p>
+                    <p class="attribute__product">Precio c/u</p>
+                </div>
+                <div class="grid__cart">
+                    <!-- <div class="cart__item">
+                        <p class="item__category cart__flex--item">Sánguche</p>
+                        <div class="item__nombres cart__flex--item">
+                            <p class="item__name">EL PREFERIDO</p>
+                            <p class="item__description">JUGOSO ASADO DE RES &amp; QUESO CHEDDAR</p>
+                        </div>
+                        <div class="item__cantidad cart__flex--item">
+                            <img src="../assets/iconSumar.png" alt="add" class="img__add">
+                            <p class="cant__product">1</p>
+                            <img src="../assets/iconRestar.png" alt="decrease" class="img__decrease">
+                        </div>
+                        <p class="item__price cart__flex--item">S/ 25</p>
+                    </div> -->
+                    
+                </div>
+                <div class="button__price">
+                    <p class="pay__button">Proceder al pago</p>
+                    <p class="price header__text">Total: S/<span class="price__value">0.00</span></p>
+                </div>
+            </div>
+            <div class="info__pay">
+                <div class="info__user">
+                    <form action="">
+                        <div class="form__contacto">
+                            <p class="form__title">Contácto</p>
+                            <div class="nombre__apellidos">
+                                <label for="nombre__apellido" >Nombre y Apellido</label>
+                                <input type="text" id="nombre__apellido" required>
+                            </div>
+                            <div class="dep__dist">
+                                <div class="departamento">
+                                    <label for="departamento" >Departamento</label>
+                                    <input type="text" id="departamento" required>
+                                </div>
+                                <div class="distrito">
+                                    <label for="distrito" >Distrito</label>
+                                    <input type="text" id="distrito" required>
+                                </div>
+                            </div>
+                            <div class="direccion">
+                                <label for="direccion" >Dirección</label>
+                                <input type="text" id="direccion" required>
+                            </div>
+                            <div class="numero__celular">
+                                <label for="celular" >Numero de celular</label>
+                                <input type="text" id="celular" required>
+                            </div>
+                        </div>
+                        <div class="form__tarjeta">
+                            <p class="form__title">Datos de Tarjeta</p>
+                            <div class="nombre__tarjeta">
+                                <label for="nombre__tarjeta" >Nombre en la tarjeta</label>
+                                <input type="text" id="nombre__tarjeta" required>
+                            </div>
+                            <div class="numero__tarjeta">
+                                <label for="numero__tarjeta" >Número de la tarjeta</label>
+                                <input type="text" id="numero__tarjeta" required>
+                            </div>
+                            <div class="fecha__cvv">
+                                <div class="fecha__caducidad">
+                                    <label for="fecha__caducidad" >Fecha caducidad</label>
+                                    <input type="text" id="fecha__caducidad" required>
+                                </div>
+                                <div class="cvc__cvv">
+                                    <label for="cvc__cvv" >CVC/CVV</label>
+                                    <input type="text" id="cvc__cvv" required>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="button__price">
+                    <p class="back__button">Retroceder</p>
+                    <p class="pay__button">Pagar</p>
+                    <p class="price header__text">Total: S/<span class="price__value">0.00</span></p>
+                </div>
+            </div>
+            <div class="purchase__complete">
+                <img class="icon__complete" src="../assets/iconComplete.png" alt="Completado">
+                <p class="text__complete">Compra Realizada</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert__add">
+        <img src="../assets/iconCarrito.png" alt="carrito">
+        <p class="alert__text">
+            Se agregó un producto al carrito
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__tittle">La Lucha Sanguchería Criolla</p>
+            <div class="footer__redes">
+                <a target="_blank" href="https://www.facebook.com/laluchasangucheriacriolla" class="redes__link">
+                    <img src="../assets/iconFb.png" alt="facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/laluchasangucheria/?hl=es" class="redes__link">
+                    <img src="../assets/iconIg.png" alt="Instagram">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__lista">
+                    <li class="footer__item">
+                        <a target="_blank" href="../index.html" class="footer__link">Inicio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tienda</a>
+                    </li>
+                    <li class="footer__item">
+                        <a target="_blank" href="nosostros.html" class="footer__link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
